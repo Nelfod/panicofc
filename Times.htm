@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" src="jstime.js">
+
+</script>
+<head>
+<style type="text/css">
+.botoes {
+margin: auto;
+width:100%;
+margin-bottom: 15px;
+float: center;
+}
+.times {
+margin-top: 0px;
+width:40%;
+margin-left: 30%;
+float: center;
+}
+.conteudo{
+margin: auto;
+margin-top: 45px;
+float: left;
+font-size: 8;
+width:250px;
+}
+</style>
+</head>
+<body onload="desabilitabotao();" alink='#000000' vlink='#000000' link='#000000'>
+<a href='index.htm' style="text-decoration:none"><b>Voltar</b></a>
+<div class="botoes" align="center">
+
+<button style='width: 150px; background-color: #2E8B57; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px' onclick="escolhezaga1()" id="bt3"><b>Sortear</b></button>
+<button style='width: 150px; background-color: #00FF7F; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px' onclick="escolhezaga2()" id="bt4"><b>Sortear</b></button>
+<button style='width: 150px; background-color: #9370DB; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px' onclick="escolhezaga3()" id="bt5"><b>Sortear</b></button>
+<button style='width: 150px; background-color: #F0E68C; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px' onclick="escolhemeia1()" id="bt7"><b>Sortear</b></button>
+<button style='width: 150px; background-color: #FFFF00; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px' onclick="escolhemeia2()" id="bt8"><b>Sortear</b></button>
+<button style='width: 150px; background-color: #FA8072; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px' onclick="escolheataque1()" id="bt1"><b>Sortear</b></button>
+<button style='width: 150px; background-color: #B5B5B5; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px' onclick="escolheataque2()" id="bt2"><b>Sortear</b></button>
+</div>
+
+<div class="conteudo">
+<table>
+<tr>
+<td>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color: #2E8B57" type="text" id="z11" value="Henrique"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color: #2E8B57" type="text" id="z12" value="Bandeira"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #00FF7F" type="text" id="z21" value="Leo"><br>	
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #00FF7F" type="text" id="z22" value="Wendel"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #9370DB" type="text" id="z31" value="Janjao"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #9370DB" type="text" id="z32" value="Seu Boneco"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m11" value="Rafael"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m12" value="Biro Biro"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m13" value="Andrezinho"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m14" value="Pokemon"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m21" value="Brutus"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m22" value="Lauro"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m23" value="Juce"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m24" value="Noel"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FA8072" type="text" id="a11" value="Nenel"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FA8072" type="text" id="a12" value="Rodrigo"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:   #B5B5B5" type="text" id="a21" value="Carlao"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:   #B5B5B5" type="text" id="a22" value="Sandro"><br>
+</td>
+<td>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color: #2E8B57" type="text" id="z13" value="Richard"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color: #2E8B57" type="text" id="z14" value="Bradock"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #00FF7F" type="text" id="z23" value="Paulista"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #00FF7F" type="text" id="z24" value="Pai Gil"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #9370DB" type="text" id="z33" value="Mauricio"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #9370DB" type="text" id="z34" value="Camilo"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m15" value="Pitoco"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m16" value="Antonio"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m17" value="Len"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #F0E68C" type="text" id="m18" value="Robinho"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m25" value="Jacare"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m26" value="Fabinho"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m27" value="Bocao"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FFFF00" type="text" id="m28" value="Felipe"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FA8072" type="text" id="a13" value="Joelson"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:  #FA8072" type="text" id="a14" value="Duda"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:   #B5B5B5" type="text" id="a23" value="Claudinho"><br>
+<input style="font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; background-color:   #B5B5B5" type="text" id="a24" value="David"><br>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="times" align="center">
+
+<table id="tabela_produto" border="2" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#000000" width="500">
+<tr>
+<td align="center" bgcolor="#999999" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Inter de Milao</b></td>
+<td align="center" bgcolor="#999999" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Borussia Dortund</b></td>
+<td align="center" bgcolor="#999999" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Real Madrid</b></td>
+<td align="center" bgcolor="#999999" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Atletico de Madrid</b></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#0066FF" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Buda</b></td>
+<td align="center" bgcolor="#0066FF" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Candido</b></td>
+<td align="center" bgcolor="#0066FF" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Cachorrao</b></td>
+<td align="center" bgcolor="#0066FF" style='width: 150px; font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:10px'><b>Leno</b></td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>
